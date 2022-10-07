@@ -63,6 +63,44 @@
                 clip-path: circle(50px at 50% 50%);
                 background-size: cover;
             }
+
+            .mail {
+                display: inline-block;
+                width: 400px;
+                height: 25px;
+                margin-right: 15px;
+            }
+            .web {
+                display: inline-block;
+                width: 200px;
+                height: 25px;
+                margin-left: 15px;
+            }
+            .web #web {
+                width: 400px;
+            }
+
+            .mail #mail {
+                width: 200px;
+            }
+            div #cmt, #name {
+                width: 1000px;
+            }
+            #cmt {
+                height: 200px;
+            }
+            .mark-required {
+                color: red;
+            }
+            .button-submit {
+                background-color: orangered;
+                height: 30px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: white;
+            }
+            .clear { clear: both }
+            
         </style>
     </head>
 
@@ -131,10 +169,49 @@
                 <p class="inline">Khang</p>
             </div>
             <div class="comment-content">
-                <p>BẠN NÀO ĐI DU LỊCH PHÚ QUỐC CÓ KÊU DỊCH VỤ BÊN JOHN&#8217;S TOUR NÊN CẨN THẬN, KHÔNG CẨN THẬN BẠN SẼ BỊ NHÂN VIÊN BÊN ĐÓ BẮT CHẸT TIỀN NHÉ,,,,</p>
+                <p>BẠN NÀO ĐI DU LỊCH PHÚ QUỐC CÓ KÊU DỊCH VỤ BÊN JOHN’S TOUR NÊN CẨN THẬN, KHÔNG CẨN THẬN BẠN SẼ BỊ NHÂN VIÊN BÊN ĐÓ BẮT CHẸT TIỀN NHÉ,,,,</p>
             </div>
 
         </aside>
+        <hr>
+        <h3 class="text-header">Trả lời</h3>
+        <p>Email của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu <span class=mark-required>*</span></p>
+        <form class="form">
+            <div>
+                <label for="cmt">Bình luận <span class=mark-required>*</span></label>
+            </div>
+            <div>
+                <input id="cmt" type="text">
+            </div>
+            <br>
+            <div>
+                <label for="name">Tên <span class=mark-required>*</span></label>
+            </div>
+            <div>
+                <input id="name" type="text">
+            </div>
+            <br>
+            <div class="mail">
+                <div>
+                    <label for="mail">Email<span class=mark-required>*</span></label>
+                </div>
+                <div>
+                    <input id="mail" type="text">
+                </div>
+            </div>
+
+            <div class="web">
+                <div>
+                    <label for="web">Trang web<span class=mark-required>*</span></label>
+                </div>
+                <div>
+                    <input id="web" type="text">
+                </div>
+            </div>
+
+            <br>
+            <button type="submit" class="button-submit">Phản hồi</button>
+        </form>
 
     </body>
 </html>
