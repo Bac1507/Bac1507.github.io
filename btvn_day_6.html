@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <title>Fruit Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+	        box-sizing: border-box;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: grid;
+	        height: 100%;
+        }
+        .container {
+            display: flex;
+            background-color: rgb(12,187,115);
+            justify-content: center;
+            position: relative;
+        }
+        .product-image {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+        .container-info {
+            display: flex;
+            justify-content: flex-end;
+            background-color: white;
+        }
+        .image {
+            background-color: rgb(156,225,125);
+        }
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .logo i {
+            border: 1px solid white;
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+        }
+        .rotate-product {
+            display: flex;
+            /* flex-direction: row; */
+        }
+        .rotate-product ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        .rotate-product ul li {
+            border: 1px solid black;
+            margin: 12px;
+        }
+        .cod {
+            font-family: sans-serif;
+            font-size: x-small;
+            font-style: italic;
+        }
+        .price {
+            color: red;
+            font-size: xx-large;
+        }
+
+        .price span {
+            font-size: 80px;
+        }
+        .button {
+            color: white;
+            font-size: large;
+            font-weight: bolder;
+            border-radius: 10%;
+            background-color: red;
+            width: 150px;
+            padding: 10px;
+        }
+        .button:hover {
+            color: red;
+            background-color: white;
+        }
+        .product-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .more-color {
+            display: flex;
+        }
+        .more-color ul {
+            display: flex;
+        }
+        .more-color ul li:first-child {
+            border: 1px solid black;
+        }
+        .more-color ul li:hover {
+            border: 1px solid black;
+        }
+        .more-color ul li {
+            margin: 12px;
+        }
+        .description ul li{
+            list-style: square;
+            margin-left: 20px
+        }
+        h3 {
+            color: grey;
+        }
+
+
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="product-image">
+                <div class="image">
+                    <div class="logo">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537291846/codepen/delicious-apples/green-apple-with-slice.png" alt="apple_image">
+                </div>
+                <div class="rotate-product">
+                    <ul>
+                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="green apple"></li>
+                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537303532/codepen/delicious-apples/half-apple.png" alt="half apple"></li>
+                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537303160/codepen/delicious-apples/green-apple-flipped.png" alt="green apple"></li>
+                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537303708/codepen/delicious-apples/apple-top.png" alt="apple top"></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="container-info">
+                <div class="product-info">
+                    <div class="name">
+                        <h1>Delicious Apples</h1>
+                        <span class="cod">COD: 45999</span>
+                    </div>
+                    <div class="price">R$ <span>7.93</span></div>
+                    <div class="more-color">
+                        <h3>SELECT A COLOR</h3>
+                        <ul>
+                            <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="green_apple"></li>
+                            <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png" alt="yellow_apple"></li>
+                            <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="orange_apple"></li>
+                            <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="red_apple"></li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h3>BENEFITS</h3>
+                        <ul>
+                            <li>Apples are nutricious</li>
+                            <li>Apples may be good for weight loss</li>
+                            <li>Apples may be good for bone health</li>
+                            <li>They're linked to a lowest risk of diabetes</li>
+                        </ul>
+                    </div>
+                    <button class="button">ADD TO CART</button>
+                </div>
+            </div>
+        
+        </div>
+    </body>
+</html>
