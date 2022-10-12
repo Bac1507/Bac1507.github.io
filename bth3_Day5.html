@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My store</title>
+        <style>
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .container div {
+                margin: 15px;
+            }
+
+            .product-left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 12px;
+                background-color: rgb(222,236,240);
+            }
+
+            .product-center {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 12px;
+                width: 800px;
+                background-color: rgb(222,236,240);
+            }
+
+            .product-right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 12px;
+                background-color: rgb(222,236,240);
+            }
+            .product-information {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+            }
+            .name-product {
+                font-size: larger;
+                text-transform: capitalize;
+                font-weight: bolder;
+            }
+            .price {
+                color: orange;
+            }
+
+            img {
+                width: 200px;
+                height: 200px;
+                background-color: inherit;
+            }
+            button {
+                align-self: flex-start;
+                background-color: white;
+                font-weight: 600;
+                height: 40px;
+                border: 2px solid black;
+                border-radius: 10%;
+            }
+            button:hover {
+                background-color: blue;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="product-left">
+                <a> <img
+                    src="https://media.istockphoto.com/photos/seat-picture-id509287090?k=20&m=509287090&s=612x612&w=0&h=DFku5Qnb7-kX3f_ovEIUQvlCRnDGSC-Eus2g_pT9RYM="
+                    alt="sample chair"></a>
+                <div class="name-product">arm chair</div>
+                <div> I have to do something. I'll go to the sports section and learn what my team is doing</div>
+            </div>
+            <div class="product-center">
+                <a> <img
+                    src="https://target.scene7.com/is/image/Target/Chairs_QUIVER-210420-1618938782938"
+                    alt="sample chair"></a>
+                <div class="product-information">
+                    <div class="name-product">latest designed stool and chair</div>
+                    <div> I have to do something. I'll go to the sports section and learn what my team is doing. How am I supposed to write that without them finding out</div>
+                    <div class="name-product">sale start from <span class="price">$99.00</span></div>
+                    <button type="button">Discover More</button>
+                </div>
+            </div>
+            <div class="product-right">
+                <a> <img
+                    src="https://www.ubuy.com.tr/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNDEwRUpyZ2pGZlMuX0FDX1NMMTAwMF8uanBn.jpg"
+                    alt="sample chair"></a>
+                <div class="name-product">hanging lamp</div>
+                <div> I have to do something. I'll go to the sports section and learn what my team is doing. Meet me outside at one o'clock today.</div>
+            </div>
+    </div>
+    </body>
+</html>
