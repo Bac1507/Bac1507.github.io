@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(164,191,176);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            display: flex;
+            text-transform: uppercase;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .white {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: whitesmoke;
+            margin: 20px;
+            box-shadow: 0 0 0 0 rgb(255,255,255, 1);
+            animation: purse-white 2s infinite;
+        }
+
+        .red {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: red;
+            box-shadow: 0 0 0 0 rgb(255,111,114,1);
+            margin: 20px;
+            animation: purse-red 2s infinite;
+        }
+
+        .orange {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: orange;
+            box-shadow: 0 0 0 0 rgb(254,117,36,1);
+            margin: 20px;
+            animation: purse-orange 2s infinite;
+        }
+
+        .blue {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: blue;
+            box-shadow: 0 0 0 0 rgb(92,165,232,1);
+            margin: 20px;
+            animation: purse-blue 2s infinite;
+        }
+
+        .green {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: green;
+            box-shadow: 0 0 0 0 rgb(52,227,80,1);
+            animation: purse-green 2s infinite;
+            margin: 20px;
+        }
+
+        .blueviolet {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            box-shadow: 0 0 0 0 rgb(220,105,213,1);
+            animation: purse-blueviolet 2s infinite;
+            margin: 20px;
+        }
+
+        .black {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: black;
+            box-shadow: 0 0 0 0 rgb(40,52,52,1);
+            animation: purse-black 2s infinite;
+            margin: 20px;
+        }
+
+        @keyframes purse-white {
+            0% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgb(255,255,255, 0.7);
+            }
+
+            70% {
+                transform: scale(1.1);
+                box-shadow: 0 0 0 15px rgb(255,255,255, 0);
+            }
+
+            100% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgb(255,255,255, 0);
+            }
+        }
+
+        @keyframes purse-red {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgb(255,111,114,0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 15px rgb(255,255,255, 0);
+            }
+
+            100% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgb(255,255,255, 0);
+            }
+        }
+
+        @keyframes purse-orange {
+            0% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgba(255, 177, 66, 0.7);
+            }
+
+            70% {
+                transform: scale(1.1);
+                box-shadow: 0 0 0 15px rgba(255, 177, 66, 0);
+            }
+
+            100% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgba(255, 177, 66, 0);
+            }
+        }
+
+        @keyframes purse-blue {
+            0% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgb(92,165,232,0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 15px rgb(92,165,232,0);
+            }
+
+            100% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgb(92,165,232,0);
+            }
+        }
+
+        @keyframes purse-green {
+            0% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgb(52,227,80,0.7);
+            }
+
+            70% {
+                transform: scale(1.1);
+                box-shadow: 0 0 0 15px rgb(52,227,80,0);
+            }
+
+            100% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgb(52,227,80,0);
+            }
+        }
+
+        @keyframes purse-blueviolet {
+            0% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgb(220,105,213, 0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 15px rgb(220,105,213, 0);
+            }
+
+            100% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgb(220,105,213, 0);
+            }
+        }
+
+        @keyframes purse-black {
+            0% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgb(40,52,52,0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 15px rgb(40,52,52,0);
+            }
+
+            100% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgb(40,52,52,0);
+            }
+        }
+
+    </style>
+    <body>
+        <h1>css pulse effect</h1>
+        <div class="container">
+            <div class="white"></div>
+            <div class="red"></div>
+            <div class="orange"></div>
+            <div class="blue"></div>
+            <div class="green"></div>
+            <div class="blueviolet"></div>
+            <div class="black"></div>
+        </div>
+    </body>
+</html>
