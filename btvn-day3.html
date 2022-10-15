@@ -99,7 +99,10 @@
                 font-weight: bold;
                 color: white;
             }
-            .clear { clear: both }
+            .container {
+                display:flex;
+                justify-content: space-between;
+            }
             
         </style>
     </head>
@@ -191,21 +194,23 @@
                 <input id="name" type="text">
             </div>
             <br>
-            <div class="mail">
-                <div>
-                    <label for="mail">Email<span class=mark-required>*</span></label>
+            <div class="container">
+                <div class="mail">
+                    <div>
+                        <label for="mail">Email<span class=mark-required>*</span></label>
+                    </div>
+                    <div>
+                        <input id="mail" type="text">
+                    </div>
                 </div>
-                <div>
-                    <input id="mail" type="text">
-                </div>
-            </div>
 
-            <div class="web">
-                <div>
-                    <label for="web">Trang web<span class=mark-required>*</span></label>
-                </div>
-                <div>
-                    <input id="web" type="text">
+                <div class="web">
+                    <div>
+                        <label for="web">Trang web<span class=mark-required>*</span></label>
+                    </div>
+                    <div>
+                        <input id="web" type="text">
+                    </div>
                 </div>
             </div>
 

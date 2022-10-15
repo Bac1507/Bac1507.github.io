@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("https://chiase24.com/wp-content/uploads/2022/02/Tong-hop-cac-hinh-anh-background-dep-nhat-21.jpg");
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .logo i {
+            font-size: xx-large;
+        }
+
+        .animation-class {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .animation-class h1 {
+            font-size: 100px;
+            color: white;
+            letter-spacing: 55px;
+            text-transform: uppercase;
+            animation: left-to-right 3s;
+        }
+
+        .animation-class h2 {
+            font-size: 40px;
+            color: white;
+            word-spacing: 45px;
+            text-transform: uppercase;
+            animation: right-to-left 3s;
+        }
+
+        button {
+            padding: 15px;
+            border-radius: 30%;
+            animation: bottom-up 4s;
+            border-color: black;
+        }
+
+        button:hover {
+            color: white;
+            background-color: black;
+        }
+
+        @keyframes left-to-right {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            30% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes right-to-left {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            60% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bottom-up {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            80% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+    </style>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-share-nodes"></i>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="animation-class">
+                <h1>outdoors</h1>
+                <h2>is where life happens</h2>
+                <button>DISCOVER OUR TOURS</button>
+            </div>
+        </div>
+    </body>
+</html>
