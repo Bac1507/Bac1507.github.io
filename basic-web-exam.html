@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <title>Basic web test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .page-1 {
+            background-image: url("./images/hero-bg.jpg");
+            background-size: cover;
+            background-position: right;
+            max-width: 1250px;
+            margin-left: auto;
+            height: 700px;
+            left: 0px;
+            top: 0px;
+        }
+        .logo {
+            width: 131px;
+            height: 31px;
+        }
+        .text-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-top: 150px;
+            gap: 15px;
+        }
+        .text-1 {
+            color: rgba(15, 36, 128, 1);
+            font-family: 'Times New Roman';
+            font-weight: 800;
+            font-size: 64px;
+            line-height: 77px;
+        }
+
+        .text-2 {
+            color: rgba(53, 84, 209, 1);
+            font-weight: 800;
+            font-size: 64px;
+            line-height: 77px;
+
+        }
+
+        .text-3 {
+            color: rgba(53, 84, 209, 1);
+            font-weight: 800;
+            font-size: 64px;
+            line-height: 77px;
+        }
+
+        .text-4 {
+            width: 276px;
+            height: 72px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .read-more {
+            padding: 12px 36px;
+            gap: 10px;
+            background: #FFFFFF;
+            border: 1px solid #3554D1;
+            border-radius: 100px;
+        }
+
+        .exclude-page-1 {
+            position: relative;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .box-search {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            /* height: 100px; */
+            border: 1px solid;
+            top: -30px;
+            background-color: white;
+            box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.2);
+            border-style: none;
+        }
+
+        .box-search input {
+            width: 500px;
+            padding: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .box-search button {
+            border: 1px solid #3554D1;
+            width: 100px;
+            padding: 15px;
+            background-color: #3554D1;
+            color: white;
+            font-weight: 400;
+        }
+
+        .page-2 {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 100px;
+        }
+
+        .info-about-img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px;
+            padding: 44px 0px;
+            gap: 48px;
+        }
+
+        .page-3 {
+            text-align: center;
+            border: 1px solid;
+            background-color: white;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-style: none;
+        }
+
+        .page-4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .apartement-list {
+            width: 380px;
+            padding: 20px;
+        }
+
+        .apartement-list img {
+            width: 320px;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            color: white;
+            width: 5px;
+            height: 35px;
+            background-color: blue;
+            transform: translateY(30%);
+        }
+
+    </style>
+    <body>
+        <div class="page-1">
+            <div class="logo">
+                <img src="./images/logo-teaser.png",
+                    alt="logo-teaser">
+            </div>
+            <div class="text-info">
+                <div class="text-1">Modern</div>
+                <div class="text-2">Apartment</div>
+                <div class="text-3">House</div>
+                <div class="text-4">It is a long establisted fact that a reader will be distracted by the readable content of</div>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+        
+        <div class="exclude-page-1">
+            <div class="box-search">
+                <form>
+                    <input type="text" placeholder="Search your categories">
+                    <input type="text" placeholder="Location">
+                    <button>Search</button>
+                </form>
+            </div>
+
+            <div class="page-2">
+                <img src="./images/about-img.jpg"
+                    alt="about-image">
+                <div class="info-about-img">
+                    <h2>About Our Apartment</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words</p>
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+
+            <div class="page-3">
+                <h2>House For Sale</h2>
+                <p>There are many variations of passages of Lorem Ipsum available</p>
+            </div>
+
+            <div class="page-4">
+                <div class="apartement-list">
+                    <img src="./images/s-1.jpg"
+                        alt="apartement-1">
+                        <h3>Apartments House</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the</p>
+                </div>
+                <div class="apartement-list">
+                    <img src="./images/s-2.jpg"
+                        alt="apartement-2">
+                        <h3>Apartments House</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the</p>
+                </div>
+                <div class="apartement-list">
+                    <img src="./images/s-3.jpg"
+                        alt="apartement-3">
+                        <h3>Apartments House</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the</p>
+                </div>
+                <div class="apartement-list">
+                    <img src="./images/s-4.jpg"
+                        alt="apartement-4">
+                        <h3>Apartments House</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the</p>
+                </div>
+                <div class="apartement-list">
+                    <img src="./images/s-5.jpg"
+                        alt="apartement-5">
+                        <h3>Apartments House</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the</p>
+                </div>
+                <div class="apartement-list">
+                    <img src="./images/s-6.jpg"
+                        alt="apartement-6">
+                        <h3>Apartments House</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
