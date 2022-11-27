@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        * {
+            font-size: large;
+        }
+        .topnav {
+            background-color: rgb(174, 174, 251);
+            padding: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+        a {
+            text-decoration: none;
+            font-size: x-large;
+            font-weight: 700;
+        }
+        .active {
+            border: 1px solid none;
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            border-radius: 15%;
+        }
+
+        a:hover{
+            color: white;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .form-input {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box-input{
+            width: 350px;
+            padding: 0;
+        }
+        label {
+            font-weight: bold;
+        }
+        .btn {
+            width: 100px;
+            background-color: rgb(229, 174, 192);
+            border: 0px solid;
+            padding: 5px;
+            border-radius: 15%;
+            color: white;
+            font-weight: bold;
+        }
+        .error-message {
+            color: red;
+            font-size: small;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="./page_product.html">Product</a>
+        <a href="./cart.html">Cart</a>
+        <a class="active" href="#contact">Admin</a>
+    </div>
+    <form novalidate>
+        <div class="form-input">
+            <label>Tên sản phẩm:</label>
+            <div class="box-input">
+                <input type="text" name="title" id="title" placeholder="Mời nhập tên sản phẩm">
+                <p class="error-message"></p>
+            </div>  
+        </div>
+        <div class="form-input">
+            <label>Hình ảnh:</label>
+            <div class="box-input">
+                <input type="text" name="image" id="image" placeholder="Mời nhập link hình ảnh">
+                <p class="error-message"></p>
+            </div>  
+        </div>
+        <div class="form-input">
+            <label>Giá:</label>
+            <div class="box-input">
+                <input type="number" name="price" id="price" placeholder="Mời nhập giá sản phẩm">
+                <p class="error-message"></p>
+            </div>  
+        </div>
+        <div class="form-input">
+            <label>Mô tả:</label>
+            <div class="box-input">
+                <textarea 
+                    type="text" 
+                    name="description" 
+                    id="description"
+                    cols="23"
+                    rows="5" 
+                    placeholder="Mô tả sản phẩm">
+                </textarea>
+                <p class="error-message"></p>
+            </div>  
+        </div>
+        
+        <button class="btn" type="submit">Submit</button>
+    </form>
+    <script src="./JS_file/admin.js"></script>
+</body>
+</html>

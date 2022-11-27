@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        * {
+            font-size: large;
+        }
+
+        .topnav {
+            background-color: rgb(174, 174, 251);
+            padding: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: x-large;
+            font-weight: 700;
+        }
+
+        .active {
+            border: 1px solid none;
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            border-radius: 15%;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .box-sp {
+            margin: 20px;
+            border: 1px solid black;
+            height: 480px;
+            box-shadow: 5px 10px #c2c1c1;
+        }
+
+        .price {
+            color: red;
+            font-size: large;
+        }
+
+        button {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        button:hover {
+            background-color: rgb(110, 19, 118);
+            border: 1px solid;
+            color: white;
+            scale: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#product">Product</a>
+        <a href="./cart.html">Cart</a>
+        <a href="./admin.html">Admin</a>
+    </div>
+
+    <ul class="product">
+        <!-- <li class="box-sp">
+            <img src="https://cdn.24h.com.vn/upload/2-2022/images/2022-05-24/iPhone-14-Pro-Max-se-co-nhung-nang-cap-iphone-14-pro-max---1-1653383554-962-width740height707.jpg"
+                alt="IPhone 14 Pro Max">
+            <p><b>Product Name: IPhone 14 Pro Max</b></p>
+            <p>Size: 256GB</p>
+            <div>Price:<span class="price">31.990.000 ₫</span></div>
+            <button>Add to cart</button>
+        </li> -->
+    </ul>
+    <script src="./JS_file/product.js">
+    </script>
+</body>
+
+</html>
