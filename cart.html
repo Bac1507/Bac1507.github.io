@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        .topnav {
+            background-color: rgb(174, 174, 251);
+            padding: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: x-large;
+            font-weight: 700;
+        }
+
+        .active {
+            border: 1px solid none;
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            border-radius: 15%;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            margin: 30px;
+        }
+
+        .product_in_cart {
+            display: flex;
+            justify-content: space-around;
+            margin-right: 10px;
+            width: 700px;
+            border-top: 1px solid rgb(110, 19, 118);
+            border-bottom: 1px solid rgb(110, 19, 118);
+        }
+
+        .product_in_cart img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .bills-box {
+            width: 400px;
+            height: 300px;
+            border: 1px solid rgb(110, 19, 118);
+        }
+
+        .bill {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        .total {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 50px;
+        }
+
+        .btnPay {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="./page_product.html">Product</a>
+        <a class="active" href="./cart">Cart<span class="w3-badge w3-red w3-small"></span></a>
+        <a href="./admin.html">Admin</a>
+    </div>
+
+    <div class="container">
+        <ul class="list_product">
+        </ul>
+        <div class="bills-box">
+            <h3 style="text-align: center;">Tổng hóa đơn</h3>
+            <ul class="bills">
+            </ul>
+            <div class="total">
+                <!-- <div><b>Tổng:</b></div>
+                <div>20000</div> -->
+            </div>
+            <div class="btnPay" style="text-align: center;"><button class="btn">Thanh toán</button></div>
+        </div>
+    </div>
+
+    <script src="./JS_file/card.js"></script>
+
+</body>
+
+</html>

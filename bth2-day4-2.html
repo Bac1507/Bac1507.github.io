@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .mid {
+                list-style: none;
+                padding: 0px;
+                width: 120px;
+                color:black;
+                background-color:bisque;
+            }
+            .hard {
+                background-color: aqua;
+                width: 120px;
+                height: 480px;
+                list-style: none;
+                padding: 0px;
+            }
+            .mid li:not(:last-child) {
+                border: 1px solid orange;
+            }
+
+            .easy li:first-child {
+                color:aqua;
+                background-color:bisque;
+            }
+            .easy li:last-child {
+                color: orangered;
+                background-color:aquamarine;
+            }
+            /* .hard li:nth-child(3n+1){
+                list-style: none;
+                display: inline-block;
+                text-align: left;
+                width: 40px;
+                height: 40px;
+                background: bisque;
+
+            } */
+            .hard div {
+                width: 40px;
+                height: 40px;
+                background: bisque;
+                display: inline-block;
+            }
+            .hard li:nth-child(3n+2) {
+                text-align: center;
+            }
+            .hard li:nth-child(3n+3) {
+                text-align: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Bảng xếp hạng lớp học</h1>
+
+        <ol class="easy">
+            <li>Tí</li>
+            <li>Tèo</li>
+            <li>Tôm</li>
+            <li>Tùm</li>
+        </ol>
+        <ul class="mid">
+            <li>Item number 1</li>
+            <li>Item number 2</li>
+            <li>Item number 3</li>
+            <li>Item number 4</li>
+        </ul>
+
+        <ul class="hard">
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+        </ul>
+    </body>
+</html>
